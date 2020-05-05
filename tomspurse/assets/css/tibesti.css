@@ -1,0 +1,136 @@
+/*margin*/
+.margt5{margin-top:5px;}
+.margt10{margin-top:10px;}
+.margt13{margin-top:13px;}
+.margt15{margin-top:15px;}
+.margt20{margin-top:20px;}
+.margt30{margin-top:30px;}
+.margt40{margin-top:40px;}
+.margt50{margin-top:50px;}
+.margt60{margin-top:60px;}
+.margt70{margin-top:70px;}
+.margt80{margin-top:80px;}
+.margt90{margin-top:90px;}
+.margt93{margin-top:93px;}
+.margt100{margin-top:100px;}
+.margt120{margin-top:120px;}
+
+
+
+.margb10{margin-bottom:10px;}
+.margb20{margin-bottom:20px;}
+.margb30{margin-bottom:30px;}
+.margb40{margin-bottom:40px;}
+.margb60{margin-bottom:60px;}
+.margb80{margin-bottom:80px;}
+.margb90{margin-bottom:90px;}
+.margb93{margin-bottom:93px;}
+.margb100{margin-bottom:100px;}
+
+
+.margl6{margin-left:6px;}
+.margl10{margin-left:10px;}
+.margl15{margin-left:15px;}
+.margl20{margin-left:20px;}
+.margl30{margin-left:30px;}
+.margl40{margin-left:40px;}
+.margl55{margin-left:55px;}
+
+
+.margr5{margin-right:5px;}
+.margr6{margin-right:6px;}
+.margr10{margin-right:10px;}
+.margr20{margin-right:20px;}
+.margr30{margin-right:30px;}
+
+
+.margtb30{margin:30px 30px;}
+
+
+.margtl40{margin:40px 0 0 40px;}
+
+
+.marglr30{margin:0 30px 0 30px;}
+
+
+.margauto{margin:auto;}
+
+
+
+/*padding*/
+
+.pad10{padding:10px;}
+.pad20{padding:20px;}
+
+
+.padt15{padding-top:15px}
+.padt20{padding-top:20px}
+.padt30{padding-top:30px}
+.padt60{padding-top:60px}
+
+
+.padb15{padding-bottom:15px;}
+.padb20{padding-bottom:20px;}
+.padb100{padding-bottom:100px;}
+.padb150{padding-bottom:150px;}
+.padb180{padding-bottom:180px;}
+.padb200{padding-bottom:200px;}
+.padb250{padding-bottom:250px;}
+
+
+
+.padr10{padding-right:10px;}
+
+
+.padtb30{padding:30px 0 30px}
+
+
+
+/*text*/
+.text-center{
+    text-align:center;
+}
+
+
+
+/*width, float and display*/
+.width35{
+    width:35%;
+}
+.width48{
+    width:48%;
+}
+.width49{
+    width:49%;
+}
+.width50{
+    width:50%;
+}
+.width65{
+    width:65%;
+}
+.width100{
+    width:100%;
+}
+.float-left{
+    float:left;
+}
+.float-right{
+    float:right;
+}
+.display-block{
+    display:block;
+}
+.display-none{
+    display:none;
+}
+@media (max-width:768px){
+    .display-on-desktop {
+        display:none;
+    }
+}
+@media (min-width:768px){
+    .display-on-mobile {
+        display:none;
+    }
+}

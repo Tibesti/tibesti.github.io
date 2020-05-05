@@ -1,0 +1,145 @@
+body{
+    overflow-x:hidden;
+    margin:0;
+    font-family: ;
+}
+.toggle{
+    height:70px;
+    overflow:hidden;
+    background-color:#f1e2d7;
+}
+.toggle a{
+    float:right;
+    display:block;
+    margin-left: 20px;
+    text-align:center;
+    text-decoration: none;
+    font-size: 18px;
+    color:#888;
+}
+.toggle ul {
+    margin: 20px 55px 0 0;
+    list-style:none;
+}
+.toggle a:hover {
+    color: #E3AE57;
+    text-decoration: none;
+}
+.brief-text-area{
+    width:100%;
+    background-image:url("./big-picture.jpg");
+    background-size:100%;
+}
+.intro-text{
+    padding:45px 30px 45px 30px;
+}
+.h1-intro-text{
+    font-size:29px;
+    font-weight:normal;
+}
+.exp-text{
+    font-size:18px;
+    color:#888;
+}
+.intro-btn{
+    color:black;
+    background-color:transparent;
+    border:3px solid black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 22px;
+    text-align:center;
+    margin-top:30px;
+}
+img{
+    display:block;
+    margin:auto;
+    border-radius:100px;
+    width:150px;
+    height:150px;
+    padding-top:25px;
+}
+.about-text{
+    text-align:center;
+    font-size:29px;
+}
+.text1{
+    padding:30px;
+}
+.hobby-contain{
+    width:70%;
+    margin:auto;
+}
+.h1-contact{
+    font-size:29px;
+    font-weight:normal;
+    color:#886D1E;
+    padding-top:30px;
+}
+.contact-text{
+    font-size:18px;
+    color:white;
+}
+.form-contain{
+    width:80%;
+    margin: 10px auto 30px;
+}
+label{
+    color:white;
+    font-size:18px;
+}
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border:2px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: transparent;
+}
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: transparent;
+}
+.contact-btn{
+    color:#fff;
+    background-color:transparent;
+    border:3px solid #fff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 22px;
+    text-align:center;
+    margin:30px auto 35px;
+    display:block;
+}
+footer{
+    margin:30px;
+}
+
+
+/*General stylings*/
+.bg-purple{
+    background-color:#f1e2d7;
+}
+.bg-brown{
+    background-color:#E3AE57;
+}
+.text-center{
+    text-align:center;
+}
+.float-left{
+    float:left;
+    width:49%;
+}
+.float-right{
+    float:right;
+    width:49%;
+}
+.full-width{
+    width:100%;
+}
