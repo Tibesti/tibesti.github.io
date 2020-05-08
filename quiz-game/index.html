@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Fun Quiz</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <div class="first-half">
+            <!--First half on desk top-->
+            <div class="black-bg">
+                <h1 class="text-center text2">Wanna know if you can get away with murder?<br>Then take this quiz</h1>
+                <button id="start-btn" class="btn1">Press to Start</button>
+                <button id="started-btn" class="btn1 hide">Quiz Started!</button>
+                <p id="scores" class="text-center text2 hide">Score Counter <span id="game-score">0</span>/5</p>
+
+            </div>
+        </div>
+        <div class="second-half">
+            <!--Second half on desk top-->
+            <div id="secondhalf-content">
+                <h2 id="question" class="text-center text1">Question</h2>
+                <div id="options" style="width:100%"><!--added id to options-->
+                    <button id="optiona" class="btn2">Option1</button><br>
+                    <button id="optionb" class="btn2">Option2</button><br>
+                    <button id="optionc" class="btn2" onclick="gameScore()">Option3</button><br>
+                    <button id="optiond" class="btn2">Option4</button>
+                </div>
+                <button id="next-btn" class="btn1 btn3 hide">Next</button><!--added hide here-->
+                <button id="comment" class="btn1 btn3 hide">View Comment</button>
+            </div>
+            <div>
+                <h1 id="endtext" class="text-center text1 hide">
+                    What you score here doesn't matter. If you get someone killed you might not get away with it, so try not to.<br>
+                    Thank you for taking the quiz.
+                </h1>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
