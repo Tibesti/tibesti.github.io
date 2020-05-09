@@ -1,0 +1,121 @@
+body{
+margin:0;
+padding:0;
+overflow-x:hidden;
+}
+.btn1{
+    padding:10px 30px 10px;
+    color:rgb(28, 144, 173);
+    background:white;
+    border:2px solid rgb(28, 144, 173);
+    border-radius:25px;
+    font-size:1.2em;
+    margin:30px auto 10px;
+    display:block;
+}
+.btn2{
+    padding:10px 30px 10px;
+    color:rgb(28, 144, 173);
+    background:white;
+    border:2px solid white;
+    border-radius:25px;
+    box-shadow:0px 0px 0.60968px rgba(0, 0, 0, 0.1), 0px 1.21936px 3.65808px rgba(0, 0, 0, 0.1), 0px 6.0968px 12.1936px rgba(0, 0, 0, 0.1);
+    font-size:1em;
+    margin:5px auto 5px;
+    width:310px;
+    display:block;
+}
+.btn2:hover{
+    border-color:rgb(28, 144, 173);
+}
+.btn2-correct{
+    color:white;
+    background-color:rgb(24, 202, 7);
+}
+.btn2-wrong{
+    color:white;
+    background-color:rgb(209, 23, 9);
+}
+.btn2-wrong:hover, .btn2-correct:hover{
+    border-color:white;
+}
+.script-btn{
+    margin:25px auto 25px;
+}
+.text1{
+    padding:50px 10px 20px;
+    color:rgb(28, 144, 173);
+}
+.text-center{
+    text-align:center;
+}
+.text2{
+    padding:50px 10px 0;
+    font-size:30px; 
+    color:rgb(28, 144, 173);
+}
+.hide{
+    display:none;
+}
+@media(min-width:320px){
+    .hide-large-screen{
+         display:none;
+    }
+    .btn3{
+        margin-bottom:50px;
+    }
+}
+@media(min-width:768px){
+    .first-half{
+        width:50%;
+        float:left;
+        background:url(./crime-scene2.jpg) no-repeat;
+        background-size: 100%;
+        height:500px;
+    }
+    .black-bg{
+        background-color:black;
+        opacity: 0.6;
+        height:500px;
+    }
+    .second-half{
+        width:50%;
+        float:right;
+    }
+    .text1{
+         padding:10px 10px 20px;
+    }
+    .text2{
+        padding-top:50px;
+        font-size:30px; 
+        color:white;
+    }
+    .btn3{
+        margin-bottom:0px;
+    }
+    .hide-large-screen{
+        display:block;
+    }
+}
+@media(min-width:992px){
+    .first-half{
+        height:600px;
+    }
+    .black-bg{
+        height:600px;
+    }
+    .text1{
+         padding:30px 10px 20px;
+    }
+}
+@media(min-width:1200px){
+    .first-half{
+        height:700px;
+    }
+    .black-bg{
+        height:700px;
+    }
+    .text1{
+         padding:50px 10px 20px;
+    }
+}
