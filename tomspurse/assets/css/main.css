@@ -246,6 +246,7 @@ body{
 
 
 
+
 /*Slider boxes in index*/
 .box1{
     width:280px;
@@ -372,6 +373,9 @@ body{
 
 
 /*dashboard 101-150*/
+.side-menu-text{
+    display:none;
+}
 .bg101{
     background-color:#F4F8FC;
     border:1px solid #F4F8FC;
@@ -396,6 +400,9 @@ body{
     border-radius:7px;
     padding:20px;
     color:#022B69;
+    margin-top:5px;
+    margin-left:5px;
+    margin-right:5px;
 }
 .clr-red{
     color:red;
@@ -407,9 +414,11 @@ body{
 }
 .bg103{
     background-color:#022B69;
+    width:80px;
 }
 .bg104{
     background-color:#0066F5;
+    width:80px;
 }
 .text102 a{
     color:white;

@@ -114,6 +114,9 @@ FOR PAGE RESPONSIVENESS
     }
 }
 @media all and (min-width:768px){
+    .size5{
+        min-height:325px;
+    }
     .circlesvg1{
         position:absolute; 
         right:25px; 
@@ -195,6 +198,9 @@ FOR PAGE RESPONSIVENESS
     }
 }
 @media all and (min-width:992px){
+    .size5{
+        min-height:267px;
+    }
     .text3{
         font-size:3.5em;
         padding:20px 0 20px;
@@ -255,6 +261,9 @@ FOR PAGE RESPONSIVENESS
     
 }
 @media all and (min-width:1200px){
+    .size5{
+        min-height:255px;
+    }
     .text3{
         font-size:4em;
         padding:20px 0 20px;
