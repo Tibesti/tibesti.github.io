@@ -57,6 +57,12 @@ FOR PAGE RESPONSIVENESS
     .text21{
         font-size:1.6em;
     }
+    .bg101b{
+        background-color:#F4F8FC;
+        border:1px solid #F4F8FC;
+        border-radius:7px;
+        padding:20px;
+    }
     .btn151{
         font-size:0.9em;
         padding:5px 5px 5px;
@@ -167,6 +173,12 @@ FOR PAGE RESPONSIVENESS
     }
     .text110{
         font-size:0.7em;
+    }
+    .bg101a{
+        background-color:#F4F8FC;
+        border:1px solid #F4F8FC;
+        border-radius:7px;
+        padding:20px;
     }
     .bg105{
         background-color:#F4F8FC;
