@@ -43,8 +43,4 @@ $(document).ready(function(){
             $('.side-menu-text').hide();
         }
     );
-
-    $('#mobile-drpdown').click(function(){
-        $('#content-drop').toggle()
-    });
 });
