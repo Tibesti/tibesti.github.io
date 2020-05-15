@@ -122,6 +122,10 @@ body{
     .open-slide{display:none}
 }
 
+button:focus{
+    outline:none;
+}
+
 .bg1{
     background:#022B69;
 }
@@ -247,6 +251,9 @@ body{
 .text22 a:hover{
     color:white;
     text-decoration:none
+}
+.yellow-btn a:hover{
+    text-decoration:none;
 }
 
 
