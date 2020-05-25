@@ -9,6 +9,22 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/tibesti.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+	<script>
+    $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+	</script>
     <style>
         body{
             background-color:#F4F8FC;
@@ -42,6 +58,26 @@
                                 <div>
                                     <label class="text51">Email</label><br>
                                     <input class="input52" placeholder="Enter email address">
+                                </div>
+                                <div>
+                                    <label class="text51">Phone Number</label><br>
+                                    <input class="input52" placeholder="Enter phone number">
+                                </div>
+                                <div>
+                                    <label class="text51">Gender</label><br>
+                                    <select class="input52">
+										<option>Choose your gender</option>
+										<option>Male</option>
+										<option>Female</option>
+									</select>
+                                </div>
+                                <div>
+                                    <label class="text51">Date of Birth</label><br>
+									<input class="input52" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                                </div>
+                                <div>
+                                    <label class="text51">Address</label><br>
+                                    <input class="input52" placeholder="Enter your address">
                                 </div>
                                 <div>
                                     <label class="text51">Password</label><br>
