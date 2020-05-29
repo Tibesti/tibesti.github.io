@@ -615,6 +615,27 @@ button:focus{
 }
 
 
+/*fund wallet and add investment pages 251-300*/
+@media(min-width:560px){
+    .fund-box{width:75%; display:block; margin:auto}
+}
+@media(min-width:768px){
+    .fund-box{width:50%; display:block; margin:auto}
+}
+@media(min-width:1200px){
+    .fund-box{width:40%; display:block; margin:auto}
+}
+.box251{
+    background-color:white;
+    border-radius:6px 6px 6px 0;
+    padding:30px;
+    margin:30px auto;
+}
+.paystack-img{
+    width:100%;
+    margin:20px 0 ;
+}
+
 
 /*To overwrite some bootstrap properties*/
 .carousel-control.left, .carousel-control.right {
