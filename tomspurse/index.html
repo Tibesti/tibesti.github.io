@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/media.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/tibesti.css">
@@ -14,8 +14,9 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
     <script  src="./assets/js/jquery.min.js"></script>
     <script  src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/type-writer.js"></script>
 </head>
-<body>
+<body onload="changeText()">
     <header>
         <nav class="toggle">
                 <div><img src="./assets/images/logo.png" alt="logo" class="logo"/></div>
@@ -48,10 +49,12 @@
                 </div>
             </div>
     </header>
+    <div>
+    </div>
     <div class="bg1">
         <div class="container">
             <div class="col-sm-6">
-                <h1 class="text2 text3">Invest For Your Future</h1>
+                <h1 class="text2 text3"><div id="typing" class="typing"></div></h1>
                 <p class="text2 text4">With just a swipe and some clicks, you can start investing immediately without hassle of paperwork. Leave the paper and save more trees. </p>
                 <a href="./signup.html"><button class="btn2 textfam">Get Started</button></a>
             </div>

@@ -1,20 +1,33 @@
-/*index page 0-49*/
-@font-face{
-    src:url(./fonts/static/Inter-Thin-slnt=0.ttf);
-    src:url(./fonts/static/Inter-ExtraLight-slnt=0.ttf);
-    src:url(./fonts/static/static/Inter-Light-slnt=0.ttf);
-    src:url(./fonts/static/static/Inter-Regular-slnt=0.ttf);
-    src:url(./fonts/static/static/Inter-Medium-slnt=0.ttf);
-    src:url(./fonts/static/Inter-SemiBold-slnt=0.ttf);
-    src:url(./fonts/static/Inter-Bold-slnt=0.ttf);
-    src:url(./fonts/static/Inter-ExtraBold-slnt=0.ttf);
-    src:url(./fonts/static/Inter-Black-slnt=0.ttf);
-    font-family:inter;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Inter', sans-serif;
 }
+
+/** for the changing text**/
+.typing {
+    color: #FFF;
+  }
+  .typing:after {
+    content: "";
+    height: 100%;
+    border-right: 3px solid #FFF;
+    animation: blink .5s infinite ease;
+  }
+  @keyframes blink{
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1%;
+    }
+  }
+
+/*index page 0-49*/
 body{
     margin:0;
     overflow-x:hidden;
-    font-family: inter;
+    font-family: 'Inter', sans-serif;
 }
 .logo{
     float: left;
