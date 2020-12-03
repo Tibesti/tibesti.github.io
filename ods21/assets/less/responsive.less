@@ -1,0 +1,325 @@
+/* ---------------------------------------------------------------------------
+    Customized by Riazul Islam Sagar
+ ---------------------------------------------------------------------------
+    Min-Width: Refers to everything greater than or equal to the amount given.
+    Max-Width: Refers to everything less than or equal to the amount given.
+ ---------------------------------------------------------------------------/*
+
+
+/* -----------------------------------------------------------------------
+    Large devices (large desktops, 1200px and up)
+ ------------------------------------------------------------------------*/
+@media (min-width : 1921px) {
+
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+
+}
+@media (min-width: @screen-lg-min) {
+    /************** 1200 GLOBAl USE***********/
+    .lg-text-center {
+        text-align: center;
+    }
+    /************** 1200 GLOBAl USE END***********/
+}
+
+
+/* -----------------------------------------------------------------------
+     Medium devices (desktops, UP TO 1199px~992px)
+ ------------------------------------------------------------------------*/
+@media (max-width : @screen-md-max) {
+    /************** 1199 GLOBAl USE***********/
+    html {
+        font-size: 55%;
+    }
+
+    .md-text-center {
+        text-align: center;
+    }
+
+    .csi-video .csi-inner {
+        padding: 6.8rem 0;
+    }
+
+
+    /************** 1199 GLOBAl USE END***********/
+
+}
+
+/* ----------------------------------------------------------------------
+     Small devices (tablets, UP TO 991px~768px)
+ -----------------------------------------------------------------------*/
+@media (max-width : @screen-sm-max) {
+    /************** 991 GLOBAl USE***********/
+    html {
+        font-size: 53%;
+    }
+    .sm-text-center {
+        text-align: center;
+    }
+
+
+
+
+
+    /************** 991 GLOBAl USE END ***********/
+
+}
+
+/* ---------------------------------------------------------------------
+    Extra small devices (phones, less UP TO 767px)
+ ----------------------------------------------------------------------*/
+@media (max-width : @screen-xs-max) {
+    /************** 767 GLOBAl USE***********/
+    html {
+        font-size: 52%;
+    }
+
+    .xs-text-center{
+        text-align: center;
+    }
+    .xs-text-right {
+        text-align: right;
+    }
+
+    .xs-text-left {
+        text-align: left;
+    }
+    .xs-float-none {
+        float: none;
+    }
+
+    .sm-text-center {
+        text-align: center;
+    }
+
+
+    .csi-btn {
+        padding: 1rem 2.6rem;
+    }
+
+    .csi-inner {
+        padding: 6.8rem 0;
+    }
+    .csi-heading {
+        margin-bottom: 4.2rem;
+    }
+
+    .csi-single-speaker {
+        max-width: 480px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .csi-single-service {
+        max-width: 480px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+
+    .csi-tab {
+        .csi-nav,
+        .csi-tab-content {
+            float: left;
+        }
+        .csi-nav {
+            width: 100%;
+            margin-right: 0;
+            padding: 1.5rem 0;
+        }
+        .csi-tab-content {
+            width: 100%;
+        }
+        .nav-pills {
+            text-align: center;
+            margin-bottom: 3rem;
+            display: flex;
+            li {
+                flex: 1;
+                float: none;
+                a {
+                    padding: 1rem 1rem;
+                }
+            }
+            .active::before {
+                top: auto;
+                right: 47%;
+                bottom: -30px;
+            }
+        }
+    }
+
+    .csi-registration-area {
+        display: block;
+        .csi-single-registration {
+            max-width: 380px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .csi-single-news {
+        max-width: 480px;
+        margin: 0 auto;
+        margin-bottom: 4.2rem;
+    }
+
+    .csi-video .csi-inner {
+        padding: 4.2rem 0;
+    }
+    .csi-video-area {
+        padding: 42px 0;
+    }
+    .csi-modal .modal-dialog .modal-content .modal-header .close {
+        margin-top: -20px;
+    }
+    .csi-modal .modal-dialog .modal-content .modal-body {
+        width: 95%;
+    }
+    .csi-modal .modal-dialog .modal-content .modal-body iframe {
+        height: 300px;
+    }
+
+    .csi-footer-logo {
+        text-align: center;
+        img {
+            max-width: 150px;
+        }
+    }
+
+    .csi-social {
+        li {
+            a {
+                width: 35px;
+                height: 35px;
+                i {
+                    font-size: 16px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+
+    .csi-footer-single-area .csi-footer-single {
+        text-align: center;
+    }
+    .footer-title {
+        text-align: center;
+    }
+    .csi-about-video {
+        margin-bottom: 2rem;
+    }
+
+    .csi-slider .csi-banner-content {
+        margin-top: 1rem !important;
+    }
+    .csi-subscribe-form {
+        margin-bottom: 4.2rem;
+    }
+    .csi-about-content-area-left {
+        margin-bottom: 4.2rem;
+    }
+
+    .page .csi-banner-inner .csi-inner,
+    .page-template .csi-banner-inner .csi-inner,
+    .single .csi-banner-inner .csi-inner,
+    .single-post .csi-banner-inner .csi-inner {
+        padding: 9rem 0 3rem;
+    }
+
+
+
+
+    /************** 767 GLOBAl USE END***********/
+
+
+}/*767 END*/
+
+
+/* ----------------------------------------------------------------
+      Custom, iPhone Retina  UP TO 480px
+-------------------------------------------------------------------*/
+@media (max-width : 480px) {
+    /************** 480 GLOBAl USE***********/
+
+    html {
+        font-size: 50%;
+    }
+
+    .csi-tab {
+        .nav-pills {
+            display: inline-block;
+            li {
+                flex: 2;
+                width: 46%;
+                float: left;
+                margin: 0 2%;
+            }
+            .active::before {
+                display: none;
+            }
+
+            .active {
+                background: @brand-highlight;
+            }
+        }
+    }
+
+    .csi-panel .csi-single-schedule {
+        display: block;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .csi-panel .csi-single-schedule .author {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        overflow: hidden;
+    }
+
+    .sponsors-area .single {
+        width: 48%;
+    }
+
+    .csi-video-area figure figcaption .video-icon i {
+        height: 70px;
+        width: 70px;
+        line-height: 71px;
+    }
+
+    .csi-about-service {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .csi-about-content-area-left {
+        margin-bottom: 4.2rem;
+    }
+
+    .csi-slider .owl-carousel .owl-item,
+    .csi-slider .owl-carousel .owl-item img {
+        height: 300px;
+    }
+
+    .csi-subscribe-form .form-group-email {
+        width: 70%;
+    }
+
+
+
+
+    /************** 480 GLOBAl USE***********/
+
+}
+
+
+
+/*-----------------------------------------------------------------------------
+   EXAMPLE: We occasionally expand on these media queries to a narrower set of devices.
+*-------------------------------------------------------------------------------*/
+//@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {  }
+
+//@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {  }
+

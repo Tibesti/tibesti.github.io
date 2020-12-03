@@ -1,0 +1,97 @@
+.csi-services {
+  background: -moz-linear-gradient(top,  rgba(26, 31, 63, 1) 0%, rgba(178, 30, 142, 0.9) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, bottom top, bottom top, color-stop(0%,rgba(26, 31, 63, 1)), color-stop(100%,rgba(178, 30, 142, 0.9))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(26, 31, 63, 1) 0%,rgba(178, 30, 142, 0.9) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(26, 31, 63, 1) 0%,rgba(178, 30, 142, 0.9) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(26, 31, 63, 1) 0%,rgba(178, 30, 142, 0.9) 100%); /* IE10+ */
+  background: linear-gradient(to top,  rgba(26, 31, 63, 1) 0%,rgba(178, 30, 142, 0.9) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(26, 31, 63, 1)', endColorstr='rgba(220, 78, 65, 0.3)',GradientType=0 ); /* IE6-9 */
+  .csi-inner {
+  }
+}
+
+
+.csi-single-service {
+  margin-bottom: 2.6rem;
+  .icon {
+    float: left;
+    overflow: hidden;
+    i {
+      .font-noline(4.2);
+      margin-top: 1rem;
+      color: @brand-highlight;
+    }
+  }
+  .text-area {
+    overflow: hidden;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    .title {
+      .font-size(26);
+      margin-top: 0;
+      color: @white-color;
+      a {
+        color: inherit;
+      }
+    }
+    p {
+      color: @white-color;
+      font-weight: 300;
+      opacity: .7;
+    }
+    .csi-btn-simple {
+      margin-top: 2rem;
+      display: inline-block;
+      color: @white-color;
+      a {
+        color: inherit;
+      }
+      &:hover {
+        //color: @white-color;
+        border-bottom: 1px solid @white-color;
+        a {
+          color: inherit;
+        }
+        opacity: 1;
+        //border-bottom: 1px solid @white-color;
+      }
+    }
+  }
+}
+
+.csi-single-service-white {
+  .icon {
+    i {
+      color: @brand-highlight;
+    }
+  }
+  .text-area {
+    overflow: hidden;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    .title {
+      color: @black-color;
+      a {
+        color: inherit;
+      }
+    }
+    p {
+      color: @black-color;
+    }
+    .csi-btn-simple {
+      color: @brand-color;
+      a {
+        color: inherit;
+      }
+      &:hover {
+        border-bottom: 1px solid @brand-color;
+        a {
+          color: inherit;
+        }
+        opacity: 1;
+      }
+    }
+  }
+}

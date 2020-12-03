@@ -1,0 +1,52 @@
+.csi-gallery {
+  text-align: center;
+  .csi-inner {
+    padding: 0;
+  }
+}
+
+
+.csi-single-gallery {
+  float: left;
+  width: 25%;
+  figure {
+    position: relative;
+    img {
+
+    }
+    figcaption {
+      .bg-rgba(@black-color, 0.7);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      .csi-hover-link {
+        display: table;
+        height: 100%;
+        width: 100%;
+        .csi-vertical {
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+          a {
+            color: @white-color;
+          }
+        }
+      }
+    }
+  }
+  &:hover {
+    figure {
+      figcaption {
+        opacity: 1;
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        animation-duration: 500ms;
+        animation-timing-function: linear;
+      }
+    }
+  }
+}

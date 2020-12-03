@@ -1,0 +1,117 @@
+
+.csi-registration {
+  background: url('http://placehold.it/1920x864') top center no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  .csi-inner {
+    //padding: 28rem 0 25rem;
+  }
+}
+.csi-registration-area {
+  display: flex;
+  align-items: center;
+  .csi-single-registration {
+    .transition-duration(@duration: 0.3s);
+    .bg-rgba(@black-color, 0.5);
+    flex: 1;
+    text-align: center;
+    color: @white-color;
+    .csi-single-registration-inner {
+      background: url('../img/registration-style.png') bottom center no-repeat;
+      -webkit-background-size: auto auto, cover;
+      -o-background-size: auto auto, cover;
+      -moz-background-size: auto auto, cover;
+      background-size: auto auto, cover;
+      padding: 4.2rem 2rem;
+      .transition-duration(@duration: 0.3s);
+    }
+    .single-top {
+      .title {
+        .font-size(26);
+        font-weight: 700;
+        text-transform: uppercase;
+        color: @white-color;
+        a {
+          color: inherit;
+        }
+      }
+      .price {
+        font-family: @csi-heading-font;
+        color: @brand-highlight;
+        .font-size(68);
+        font-weight: 900;
+        i {
+          font-weight: 300;
+          color: @white-color;
+          font-style: normal;
+        }
+        span {
+          font-family: @csi-base-font;
+          .font-size(26);
+          font-weight: 300;
+          color: @white-color;
+        }
+      }
+    }
+    .single-bottom {
+      ul {
+        margin-top: 2.6rem;
+        margin-bottom: 6.8rem;
+        li {
+          .font-size(16);
+          font-weight: 300;
+          margin-bottom: .4rem;
+        }
+      }
+    }
+    &:hover {
+      .bg-rgba(@white-color, 0.9);
+      .single-top {
+        .title {
+          color: @brand-color;
+          a {
+            color: inherit;
+          }
+        }
+        .price {
+          color: @brand-highlight;
+          i {
+            color: @black-color;
+          }
+          span {
+            color: @black-color;
+          }
+        }
+      }
+      .single-bottom {
+        ul {
+          li {
+            color: @black-color;
+          }
+        }
+      }
+    }
+  }
+  .recommended {
+    background: -moz-linear-gradient(top,  rgba(26, 31, 63, 1) 0%, rgba(178, 30, 142, 0.9) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, bottom top, bottom top, color-stop(0%,rgba(26, 31, 63, 1)), color-stop(100%,rgba(178, 30, 142, 0.9))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(26, 31, 63, 1) 0%,rgba(178, 30, 142, 0.9) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(26, 31, 63, 1) 0%,rgba(178, 30, 142, 0.9) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(26, 31, 63, 1) 0%,rgba(178, 30, 142, 0.9) 100%); /* IE10+ */
+    background: linear-gradient(to top,  rgba(26, 31, 63, 1) 0%,rgba(178, 30, 142, 0.9) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(26, 31, 63, 1)', endColorstr='rgba(220, 78, 65, 0.3)',GradientType=0 ); /* IE6-9 */
+    .csi-single-registration-inner {
+      padding: 6.8rem 2rem;
+    }
+  }
+  /*.csi-single-registration {
+    &:hover {
+      .bg-rgba(@black-color, 0.9);
+      .csi-single-registration-inner {
+
+      }
+    }
+  }*/
+ }
