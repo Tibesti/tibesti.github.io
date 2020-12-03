@@ -890,6 +890,7 @@ textarea.form-control {
   -moz-transition: all 0.4s ease-in-out 0s;
   -o-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
+  width:400px;
 }
 .csi-header .csi-navbar .csi-nav {
   float: right;
@@ -970,7 +971,7 @@ textarea.form-control {
   margin-top: .8rem;
 }
 .csi-header .menu-onscroll .csi-navbar .csi-logo a img {
-  max-width: 100px;
+  max-width: 180px;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
   -o-transition: all 0.2s ease-in-out 0s;
@@ -1858,7 +1859,7 @@ textarea.form-control {
 ---------------------------------------------------------------------*/
 .csi-speakers {
   background: #fff;
-  background: url('../img/speakerbg-left-bottom.png') bottom left no-repeat;
+  background: url('') bottom left no-repeat;
   -webkit-background-size: auto auto, cover;
   -o-background-size: auto auto, cover;
   -moz-background-size: auto auto, cover;
@@ -3159,6 +3160,7 @@ textarea.form-control {
   -o-background-size: auto auto, cover;
   -moz-background-size: auto auto, cover;
   background-size: auto auto, cover;
+  opacity:0.1;
 }
 .csi-footer .csi-inner {
   padding-bottom: 2.6rem;
