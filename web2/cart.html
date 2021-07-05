@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Elite Readers : Cart</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/royal-blue-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Open Sans for body font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <!-- Lato for Title -->
+  	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+ 
+ 
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+   	
+  	<!-- Start Header -->
+	<header id="mu-header" class="" role="banner">
+		<div class="container">
+			<nav class="navbar navbar-default mu-navbar">
+			  	<div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+
+				      <!-- Text Logo -->
+				      <a class="navbar-brand" href="index.html"><i class="fa fa-book" aria-hidden="true"></i> Elite Readers</a>
+
+				      <!-- Image Logo -->
+				      <!-- <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png"></a> -->
+
+
+				    </div>
+
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      	<ul class="nav navbar-nav  navbar-right">
+					        <li style="margin-top:-15px;">
+								<a href="./index.html">
+									<i class="fa fa-home" aria-hidden="true" style="font-size:30px; color: white;"></i>
+								</a>
+							</li>
+							<li>
+								<i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:30px; color: white; margin-left: 10px;"></i>
+							    <span class='badge badge-warning' id='lblCartCount'> 5 </span>
+							</li>
+				      	</ul>
+				    </div><!-- /.navbar-collapse -->
+			  	</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+	</header>
+	<!-- End Header -->
+	<div style="background-color:#4568DC; height:90px"></div>
+	<!-- Start main content -->
+		
+	<main role="main">
+
+		<!-- Start Cart pgae -->
+		<section id="mu-book-overview">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-book-overview-area">
+
+							<div class="mu-heading-area">
+								<h2 class="mu-heading-title">CART</h2>
+								<span class="mu-header-dot"></span>
+							</div>
+
+							<div class="mu-book-overview-content">
+								<div class="row">
+
+									<!--Start form to collect info-->
+									<div class="col-md-8 col-sm-6">
+										<div class="mu-book-overview-single">
+											<div style="padding: 10px 20px;">
+												<form id="ajax-contact" method="post" action="" class="mu-contact-form">
+													<p>Please fill this form first.</p>
+													<div class="form-group">                
+														<input type="text" class="form-control" placeholder="Name" id="customer_name" name="name" required>
+													</div>
+													<div class="form-group">                
+														<input type="email" class="form-control" placeholder="Email" id="customer_email" name="email" required>
+													</div>
+													<div class="form-group">                
+														<input type="phone" class="form-control" placeholder="Phone Number" id="customer_phone" name="phone" required>
+													</div>  
+													<div class="form-group">                
+														<input type="country" class="form-control" placeholder="Country" id="customer_country" name="country" required>
+													</div>  
+													<button>NOTE: Your download link will be sent to your email after making payment</button>
+												</form>
+				
+											</div>
+										</div>
+									</div>
+									<!--End form-->
+									
+									<!--Start summary of cart-->
+									<div class="col-md-4 col-sm-6">
+										<div class="mu-book-overview-single2">
+											<div>
+												<div style="display: flex;">
+													<img src="assets/images/author.jpg" width="25%" height="auto"/>
+													<div style="margin-left: 10px;">
+														<h5>Book topic topic totle title title title</h5>
+														<p>By Shalom Popoola</p>
+														<p>Price: $50</p>
+														<p class="float:right;">
+															<i class="fa fa-remove" aria-hidden="true" style="font-size:20px; color: red;"></i>
+															Remove
+														</p>
+													</div>
+												</div>
+												<hr/>
+											</div>
+											<div>
+												<div style="display: flex;">
+													<img src="assets/images/author.jpg" width="25%" height="auto"/>
+													<div style="margin-left: 10px;">
+														<h5>Book topic topic totle title title title</h5>
+														<p>By Shalom Popoola</p>
+														<p>Price: $50</p>
+														<p class="float:right;">
+															<i class="fa fa-remove" aria-hidden="true" style="font-size:20px; color: red;"></i>
+															Remove
+														</p>
+													</div>
+												</div>
+												<hr/>
+											</div>
+											<div>
+												<div style="display: flex;">
+													<img src="assets/images/author.jpg" width="25%" height="auto"/>
+													<div style="margin-left: 10px;">
+														<h5>Book topic topic totle title title title</h5>
+														<p>By Shalom Popoola</p>
+														<p>Price: $50</p>
+														<p class="float:right;">
+															<i class="fa fa-remove" aria-hidden="true" style="font-size:20px; color: red;"></i>
+															Remove
+														</p>
+													</div>
+												</div>
+												<hr/>
+											</div>
+											<div><h5>TOTAL: <span style="float: right;">$150</span></h5></div>
+										</div>
+										<button class="cart-payment" onClick="payWithPaystack()">Make Payment</button>
+									</div>
+									<!--End summary of cart-->
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Cart -->
+	</main>	
+	<!-- End main content -->	
+			
+			
+	<!-- Start footer -->
+	<footer id="mu-footer" role="contentinfo">
+		<div class="container">
+			<div class="mu-footer-area">
+				<div class="mu-social-media">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-google-plus"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+				</div>
+				<p class="mu-copyright">&copy; Copyright <a rel="nofollow" href="http://markups.io">markups.io</a>. All right reserved.</p>
+			</div>
+		</div>
+
+	</footer>
+	<!-- End footer -->
+
+	
+	
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+	<!-- Slick slider -->
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <!-- Counter js -->
+    <script type="text/javascript" src="assets/js/counter.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+	<!--Paystack js library-->
+    <script type="text/javascript" src="https://js.paystack.co/v1/inline.js"></script>
+
+   
+ 
+    <!-- Custom js -->
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+	
+    
+  </body>
+</html>
