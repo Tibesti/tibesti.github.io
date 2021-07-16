@@ -1,85 +1,388 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>Tibesti.com | Personal profile</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Olugbemi Tobiloba</title>
+<!--
+
+Lava Landing Page
+
+https://templatemo.com/tm-540-lava-landing-page
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+
+    <!-- Contact form using email.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_WAMARZwIjcHmAo1A1eYOY');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("mech-cv").addEventListener('click', function(event) {
+                document.getElementById("mech-cv").innerHTML = "NOT AVAILABLE";
+            });
+            document.getElementById("mech-cv2").addEventListener('click', function(event) {
+                document.getElementById("mech-cv2").innerHTML = "NOT AVAILABLE";
+            });
+            document.getElementById('contact').addEventListener('submit', function(event) {
+                event.preventDefault();
+                document.getElementById("form-submit").innerHTML = "Please Wait ...";
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_qjh91el', 'template_dpl931w', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                        document.getElementById("form-submit").innerHTML = "MESSAGE SENT!!!";
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                        document.getElementById("form-submit").innerHTML = "SEND MESSAGE NOW";
+                    });
+            });
+        }
+    </script>
+
 </head>
+
 <body>
-    <header class="bg-purple">
-        <nav class="toggle">
-                <ul class="navigation">
-                    <li><a href="#contact">Contact Me</a></li>
-                    <li><a href="#interests">Interests</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#home">Home</a></li>
-                </ul>
-            </nav>
-    </header>
-    <div>
-        <!-- brief text -->
-        <a name="home"></a>
-        <div class="brief-text-area">
-            <div class="intro-text">
-                <p class="exp-text">Welcome to my website</p>
-                <h1 class="h1-intro-text">Hello, I am <strong>Tobiloba</strong> currently based in Nigeria</h1>
-                <p class="exp-text">I am a fullstack web developer with a knowledge of HTML, CSS, Javascript and Nodejs. I am basically the boy in the world wide web.</p>
-                <button class="intro-btn">Get Started</button>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            Tobiloba
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
+                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a>
+                            </li>
+                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">More</a>
+                                <ul>
+                                    <li><a href="" class="menu-item">Achievements</a></li>
+                                    <li><a href="" class="menu-item">Publications</a></li>
+                                    <li><a href="" class="menu-item">Blog</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="bg-purple">
-        <!-- about me -->
-        <a name="about"></a>
-        <div>
-            <img src="./pic.jpg" />
-            <h1 class="about-text">About Me</h1>
-        </div>
-        <div class="exp-text text-center">
-            <p class="text1">My name is Tobiloba Femi Olugbemi, currently based in Ogun State, Nigeria. I was born on July 1st, 1998. I live in Ibara Housing Estate, Abeokuta, Ogun State. A 500 level student of the Federal University of Agriculture, Abeokuta majoring in Mechanical Engineering. 
-            My hometown is Isua Akoko in Ondo State, even though I've only been there once in my life. My slack ID is "Tibesti". I am an awesome guy, a team player, and a very hardworking human being</p>
-        </div>
-    </div>
-    <div class="hobby-contain">
-        <!-- my interests and hobbies -->
-        <a name="interests"></a>
-        <div>
-            <h2 class="text-center">My Interests and Hobbies</h2>
-            <p class="exp-text">As a  very reserved guy, I really don't have a lot of things other people describe as fun that I do, but here are some of the things that I love to do and have interest in:</p>
-        </div>
-        <div>
-            <ul class="exp-text">
-                <li>Playing Strategy games</li>
-                <li>Watching reality tv shows</li>
-                <li>Playing chess</li>
-                <li>Listening to slow music</li>
-            </ul>
-        </div>
-    </div>
-    <div class="bg-brown" width="100%">
-        <!-- contact form -->
-        <a name="contact"></a>
-        <div class="form-contain" style="padding-bottom:20px;">
-            <h1 class="h1-contact text-center">CONTACT FORM</h1>
-            <form >
-                <div class="full-width top-form">
-                    <div class="float-left">
-                        <label>Name</label>
-                        <input placeholder="Your name">
-                    </div>
-                    <div class="float-right">
-                        <label>Email</label>
-                        <input placeholder="Your email">
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1><em>WELCOME,</em></h1>
+                        <p>My name is <span>Tobiloba Olugbemi</span>, I'm excited to have you here on my website. On this website, you'll be getting to know me better, know more about my business and career. </p> 
+                        <a href="#about" class="main-button-slider">GET STARTED</a>
                     </div>
                 </div>
-                <div>
-                    <label>Message</label>
-                    <textarea rows="10" placeholder="Your message"></textarea> 
-                </div>
-                <button class="contact-btn">Send Message</button>
-            </form>
+            </div>
         </div>
+        <!-- ***** Header Text End ***** -->
     </div>
-    <footer>
-        <p class="text-center">&copy; 2020 All Right Reserved</p>
+    <!-- ***** Welcome Area End ***** -->
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>01</h2>
+                            <img src="assets/images/developer.png" alt="">
+                            <h4>Web Developer</h4>
+                            <p>I create websites that suit and help to promote your business to a better extent.</p>
+                            <a href="assets/files/tobiloba-olugbemi-resume.docx" download class="main-button">
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>02</h2>
+                            <img src="assets/images/engineer.png" alt="">
+                            <h4>Mechanical Engineer</h4>
+                            <p>I am currently an undergraduate at the Federal University of Agriculture and also working on a research for environmental suatainability.</p>
+                            <a href="javascript:void(0)" class="main-button" id="mech-cv" >
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>03</h2>
+                            <img src="assets/images/vocalist.png" alt="">
+                            <h4>Vocalist</h4>
+                            <p>Among other things, I am an amazing singer, LOL. Maybe you should be the judge of that.</p>
+                            <a href="javascript:void(0)" class="main-button" id="mech-cv2">
+                                Check Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+    <div class="left-image-decor"></div>
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="promotion">
+        <div class="container">
+            <div class="row">
+                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/career.svg" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <h3 style="margin-bottom: 30px;">My Interests</h3>
+                    <ul>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                            <img src="assets/images/about-icon-01.png" alt="">
+                            <div class="text">
+                                <h4>New languages</h4>
+                                <p>I have a very high interest in learning new lauguages. Currently, I speak Spanish and Frech fluently.</p>
+                            </div>
+                        </li>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
+                            <img src="assets/images/about-icon-02.png" alt="">
+                            <div class="text">
+                                <h4>Mentorship</h4>
+                                <p>I also help with resources to help people get started on the career path they choose in any way I can.</p>
+                            </div>
+                        </li><!--
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+                            <img src="assets/images/about-icon-03.png" alt="">
+                            <div class="text">
+                                <h4>Aenean faucibus venenatis</h4>
+                                <p>Phasellus in imperdiet felis, eget vestibulum nulla. Aliquam nec dui nec augue
+                                    maximus porta. Curabitur tristique lacus.</p>
+                            </div>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+
+    <div class="right-image-decor"></div>
+
+    <!-- ***** Testimonials Starts ***** -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="center-heading">
+                        <h2>What They Think <em>About ME</em></h2>
+                        <p>Hear from satisfied customers, happy partners and mentors that i have worked with accross the globe.</p>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/testimonial-author-1.png" alt="Author One"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Harry West</h4>
+                                <p>“Tobiloba has a passion for his work and his interest in helping my business grow has been very effective.”</p>
+                                <span>Entrepreneur</span>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/niyi.png" alt="Second Author"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Adeniyi Adelakun</h4>
+                                <p>“I've had the opportunity to mentor Tobi during his undergraduate days and I can tell he doesn't delay when it comes to work.”</p>
+                                <span>Materials Engineer</span>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/images/kunle.png" alt="Second Author"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul>
+                                <h4>Adekunle Gold</h4>
+                                <p>“I had so much fun working on my last musical piece with Tobi. He's a great guy and he definitely has potential.”</p>
+                                <span>Musician</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Testimonials Ends ***** -->
+
+
+    <!-- ***** Footer Start ***** -->
+    <footer id="contact-us">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row">
+                    <!-- ***** Contact Form Start ***** -->
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+                        <div class="contact-form">
+                            <form id="contact" action="" method="post">
+                                <input type="hidden" name="contact_number">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="name" type="text" id="name" placeholder="Full Name" required=""
+                                                style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <fieldset>
+                                            <input name="email" type="text" id="email" placeholder="E-Mail Address"
+                                                required="" style="background-color: rgba(250,250,250,0.3);">
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <textarea name="message" rows="6" id="message" placeholder="Your Message"
+                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <fieldset>
+                                            <button type="submit" id="form-submit" class="main-button">Send Message
+                                                Now</button>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- ***** Contact Form End ***** -->
+                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
+                        <h2>Contact <em>Tobiloba</em></h2>
+                        <p>Fill the form to contact me on all services you want and also to patner with me. If you also have any ideas on what we can work on together, please do not hesitate.
+                            <br>You can also follow me on social media to contact me or reach me easily.</p>
+                        <ul class="social">
+                            <li><a href="https://www.facebook.com/ohtobbyloba/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/tobi_tibesti"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/tobiloba-olugbemi-72a232187/"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/tobi_tibesti/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://github.com/Tibesti/"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sub-footer">
+                        <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Tobiloba Olugbemi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
 </body>
+</html>
